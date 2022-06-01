@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Card from "./components/Card";
+import { useState } from "react";
+import Calculate from "./components/Calculate";
+import imgLogo from "./assets/Logo6.png";
+import imgNav from "./assets/navbar.png";
 
 function App() {
+  const n = 3;
+
+  let temp = [];
+  for (let i = 0; i < n; i++) {
+    temp.push(0);
+  }
+  const [arrTotal, setarrTotal] = useState(temp);
+  console.log(arrTotal);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="top">
+        <img src={imgNav} className="navImg" alt="shit" />
+        <img src={imgLogo} className="billImg" alt="shit" />
+      </div>
+      <div className="stack">
+        <div className="container">
+          {arrTotal.map((ele, ind) => (
+            <Card arrtotal={arrTotal} index={ind} setarrTotal={setarrTotal} />
+          ))}
+        </div>
+
+        <Calculate arr={arrTotal} />
+      </div>
     </div>
   );
 }
