@@ -187,3 +187,110 @@ body {
   height: 40px;
   margin-left: 30px;
 }
+.homeMain {
+  border-radius: 20px;
+  background-color: #00275e;
+  width: 280px;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 190px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px rgb(211, 210, 210);
+}
+.pmMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.minusHome {
+  display: block;
+  height: 50px;
+  margin-top: 0;
+  width: 50px;
+  margin-left: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(215, 212, 211);
+  font-size: xx-large;
+}
+.addHome {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-top: 3px;
+  margin-right: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(215, 212, 211);
+  font-size: xx-large;
+}
+.outerMain {
+  background-color: #00275e;
+  display: flex;
+  height: 1000px;
+  justify-content: space-between;
+}
+.rightSide {
+  width: 600px;
+  height: 800px;
+  background-color: #00275e;
+  background-image: url("C:\Users\garvi\reactfirst\src\assets\overlay.png");
+  background-repeat: no-repeat;
+}
+.homeLogo {
+  margin-top: 30px;
+  margin-left: 190px;
+  height: 160px;
+}
+.paraOne {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: x-large;
+  height: 300px;
+  width: 650px;
+}
+.formHead {
+  margin-top: 8px;
+  margin-left: 40px;
+  width: 220px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.numDiv {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 50px;
+}
+.nTotal {
+  font-size: xx-large;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-left: 42px;
+}
+
+.calcBtn {
+  font-size: x-large;
+  margin: 10px;
+  margin-left: 100px;
+  width: 80px;
+  height: 45px;
+  border-radius: 0px;
+  background-color: rgb(60, 199, 60);
+  border: none;
+}
+.p2Box {
+  margin-top: 40px;
+  background-color: white;
+  height: 70px;
+}
+.error {
+  margin-top: 3px;
+}

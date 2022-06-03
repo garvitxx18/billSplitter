@@ -21,7 +21,7 @@ const Card = ({ arrtotal, index, setarrTotal }) => {
 
   return (
     <div className="mainCard">
-      <Name />
+      <Name index={index} />
       <Slot arr={arr} setarr={setArr} total={changeTotal} />
       <div className="add-button-slot">
         <button style={hStyle} onClick={increase} className="add-button">

@@ -5,11 +5,9 @@ import Calculate from "./components/Calculate";
 import imgLogo from "./assets/Logo6.png";
 import imgNav from "./assets/navbar.png";
 
-function App() {
-  const n = 3;
-
+function App({ num }) {
   let temp = [];
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < num; i++) {
     temp.push(0);
   }
   const [arrTotal, setarrTotal] = useState(temp);
