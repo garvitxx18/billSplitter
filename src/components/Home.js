@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import App from "../App";
 import imgLogo from "../assets/Logo7.png";
-
+import imgOverlay from "../assets/overlay.png";
 const Home = () => {
   let hStyle = { color: "white" };
   const [num, setnum] = useState(2);
@@ -46,7 +46,12 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="rightSide">
+              <div
+                className="rightSide"
+                style={{
+                  backgroundImage: `url(${imgOverlay})`,
+                }}
+              >
                 <div className="homeMain">
                   <div className="p2Box">
                     <h2 className="formHead">
